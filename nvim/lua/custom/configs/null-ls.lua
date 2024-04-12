@@ -8,12 +8,18 @@ local sources = {
     -- formatting.ruff.with({
     --     extra_args = { "--ignore", "F401 F841" },
     -- }),
+
+    -- Python
     formatting.black.with({
         extra_args = { "-l", "80" },
     }),
 
     lint.mypy,
     lint.ruff,
+
+    -- Go
+    formatting.gofmt,
+    lint.golangci_lint,
 }
 
 null_ls.setup {

@@ -6,6 +6,7 @@ local capabilities = config.capabilities
 local lspconfig = require("lspconfig")
 
 lspconfig.pyright.setup(require("custom.configs.pyright"))
+lspconfig.gopls.setup(require("custom.configs.gopls"))
 
 lspconfig.omnisharp.setup({
     on_attach = on_attach,
