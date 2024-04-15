@@ -76,7 +76,15 @@ local M = {
         config = function ()
             require "custom.configs.marks"
         end,
-    }
+    },
+    {
+        "nvim-treesitter/nvim-treesitter-context",
+        event = "VeryLazy",
+
+        config = function ()
+            require "custom.configs.context"
+        end,
+    },
 }
 
 return M

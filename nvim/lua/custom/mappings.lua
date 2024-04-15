@@ -52,6 +52,12 @@ M.general = {
             "ggVG",
             "Select all",
         },
+
+        -- Kinda hacky but it works
+        ["[c"] = {
+            ":lua require('treesitter-context').go_to_context(vim.v.count1)<CR>",
+            "Go to the current context",
+        },
     },
     v = {
         -- Don't store those into the jump list
