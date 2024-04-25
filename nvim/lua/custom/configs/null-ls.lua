@@ -20,6 +20,9 @@ local sources = {
     -- Go
     formatting.gofmt,
     lint.golangci_lint,
+
+    -- Web development
+    formatting.prettier,
 }
 
 null_ls.setup {

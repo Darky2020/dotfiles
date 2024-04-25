@@ -8,6 +8,10 @@ local lspconfig = require("lspconfig")
 lspconfig.pyright.setup(require("custom.configs.pyright"))
 lspconfig.gopls.setup(require("custom.configs.gopls"))
 
+lspconfig.html.setup{}
+lspconfig.cssls.setup{}
+lspconfig.tsserver.setup{}
+
 lspconfig.omnisharp.setup({
     on_attach = on_attach,
     capabilities = capabilities,
