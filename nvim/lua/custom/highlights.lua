@@ -120,7 +120,28 @@ M.add = {
     },
     ["@lsp.type.macro.cpp"] = {
         fg = "red",
-    }
+    },
+    ["@tag.attribute.html"] = {
+        fg = "purple",
+    },
+    ["@property.css"] = {
+        fg = "orange",
+    },
+    ["htmlTagName"] = {
+        link = "@tag.html",
+    },
+    ["htmlSpecialTagName"] = {
+        link = "@tag.html",
+    },
+    ["htmlTag"] = {
+        link = "@tag.delimiter.html",
+    },
+    ["htmlEndTag"] = {
+        link = "@tag.delimiter.html",
+    },
+    ["htmlArg"] = {
+        link = "@tag.attribute.html",
+    },
 }
 
 return M
